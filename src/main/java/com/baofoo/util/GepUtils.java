@@ -23,7 +23,7 @@ public class GepUtils {
     public static final String cerpath = System.getProperty("user.dir") + "/src/main/webapp/file/publickey.cer";
     public static final String pfxpass = "5181221121000514358_416342";//商户私钥密钥
     
-    public static final String userNo = "5181240322000274308";
+    public static final String userNo = "5181260913000526908";
     
     /**
      * 生成流水号

@@ -19,7 +19,7 @@ public class ApplyGepRechargeSubAcc {
 		dataContentMap.put("userReqNo", GepUtils.randomSn());
 		dataContentMap.put("accountPayeeType", "1");
 		dataContentMap.put("country", "HKG");
-		dataContentMap.put("callBackUrl", "http://10.0.60.55:8083/GEP_VAS/notify/ex");
+		dataContentMap.put("callBackUrl", "http://mp-uat-wtp.verifin.global/mp-server/api/mp/callback/notify");
 		dataContentMap.put("accountName", "GEP Testing Co., Ltd");
 		
 		GepUtils.sendRequest(url, dataContentMap, null, true);
