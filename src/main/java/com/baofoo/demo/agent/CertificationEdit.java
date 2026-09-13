@@ -17,8 +17,8 @@ public class CertificationEdit {
 	public static void main(String[] args) throws UnsupportedEncodingException, IOException {
 		String url = "/api/agent/user/certification-edit";
 		Map<String, Object> dataContentMap = new HashMap<>();
-		dataContentMap.put("userNo", "5181240322000274308");
-		dataContentMap.put("userType", "2");//1-境内个人 2-境内企业 3-香港企业 5-其他地区企业
+		dataContentMap.put("userNo", "5181260913000526908");
+		dataContentMap.put("userType", "5");//1-境内个人 2-境内企业 3-香港企业 5-其他地区企业
 		dataContentMap.put("callBackUrl", "");
 		
 		Map<String, Object> informationMap = new HashMap<>();
@@ -26,10 +26,10 @@ public class CertificationEdit {
 			informationMap.put("idFront", 13331433);
 			informationMap.put("idReverse", 13331435);
 			informationMap.put("idHold", 13331436);
-			informationMap.put("idNo", "421000195710071340");
+			informationMap.put("idNo", "421000198806061343");
 			informationMap.put("name", "木木");
 			informationMap.put("legalCertExpiryDate", "2050-01-01");
-			informationMap.put("birthDate", "2000-01-01");
+			informationMap.put("birthDate", "1988-06-06");
 			informationMap.put("province", "210000_辽宁省");
 			informationMap.put("city", "210200_大连市");
 			informationMap.put("area", "210202_中山区");
@@ -61,9 +61,9 @@ public class CertificationEdit {
 			informationMap.put("legalIdFront", 13331435);
 			informationMap.put("legalIdReverse", null);	
 			informationMap.put("legalIdHold", 13331436);	
-			informationMap.put("legalIdNo", "421000195710071340");
+			informationMap.put("legalIdNo", "421000198806061343");
 			informationMap.put("legalName", "阿木木");
-			informationMap.put("legalBirthDate", "2000-01-01");
+			informationMap.put("legalBirthDate", "1988-06-06");
 			informationMap.put("legalCertExpiryDate", "2050-01-01");
 			informationMap.put("legalProvince", "210000_辽宁省");
 			informationMap.put("legalCity", "210200_大连市");
@@ -73,9 +73,9 @@ public class CertificationEdit {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"});
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});
@@ -108,7 +108,7 @@ public class CertificationEdit {
 			informationMap.put("directorIdFront", 13331433);
 			informationMap.put("directorIdReverse", 13331433);
 			informationMap.put("directorIdHold", 13331433);
-			informationMap.put("directorIdNo", "421000195710071340");
+			informationMap.put("directorIdNo", "421000198806061343");
 			informationMap.put("directorName", "阿木木");
 			informationMap.put("directorBirthDate", "1988-06-06");
 			informationMap.put("directorCertExpiryDate", "2042-01-01");
@@ -121,9 +121,9 @@ public class CertificationEdit {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"});
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});
@@ -154,7 +154,7 @@ public class CertificationEdit {
 			informationMap.put("directorIdFront",  new Number[] {13331433});
 			informationMap.put("directorIdReverse",  new Number[] {13331433});
 			informationMap.put("directorIdHold",  new Number[] {13331433});
-			informationMap.put("directorIdNo", new String[] {"421000195710071340"});
+			informationMap.put("directorIdNo", new String[] {"421000198806061343"});
 			informationMap.put("directorName", new String[] {"阿木木"});
 			informationMap.put("directorBirthDate", new String[] {"1988-06-06"});
 			informationMap.put("directorCertExpiryDate", new String[] {"2042-01-01"});
@@ -167,9 +167,9 @@ public class CertificationEdit {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"});
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});

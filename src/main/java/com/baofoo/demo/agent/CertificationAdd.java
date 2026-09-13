@@ -27,10 +27,10 @@ public class CertificationAdd {
 			informationMap.put("idFront", 13331433);
 			informationMap.put("idReverse", 13331435);
 			informationMap.put("idHold", 13331436);
-			informationMap.put("idNo", "421000195710071340");
+			informationMap.put("idNo", "421000198806061343");
 			informationMap.put("name", "木木");
 			informationMap.put("legalCertExpiryDate", "2050-01-01");
-			informationMap.put("birthDate", "2000-01-01");
+			informationMap.put("birthDate", "1988-06-06"); // 须与身份证号第7-14位一致
 			informationMap.put("province", "210000_辽宁省");
 			informationMap.put("city", "210200_大连市");
 			informationMap.put("area", "210202_中山区");
@@ -62,9 +62,9 @@ public class CertificationAdd {
 			informationMap.put("legalIdFront", 13331435);
 			informationMap.put("legalIdReverse", null);	
 			informationMap.put("legalIdHold", 13331436);	
-			informationMap.put("legalIdNo", "421000195710071340");
+			informationMap.put("legalIdNo", "421000198806061343");
 			informationMap.put("legalName", "阿木木");
-			informationMap.put("legalBirthDate", "2000-01-01");
+			informationMap.put("legalBirthDate", "1988-06-06"); // 须与身份证号第7-14位一致
 			informationMap.put("legalCertExpiryDate", "2050-01-01");
 			informationMap.put("legalProvince", "210000_辽宁省");
 			informationMap.put("legalCity", "210200_大连市");
@@ -74,9 +74,9 @@ public class CertificationAdd {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"}); // 须与身份证号第7-14位一致
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});
@@ -109,9 +109,9 @@ public class CertificationAdd {
 			informationMap.put("directorIdFront", 13331433);
 			informationMap.put("directorIdReverse", 13331433);
 			informationMap.put("directorIdHold", 13331433);
-			informationMap.put("directorIdNo", "421000195710071340");
+			informationMap.put("directorIdNo", "421000198806061343");
 			informationMap.put("directorName", "阿木木");
-			informationMap.put("directorBirthDate", "1988-06-06");
+			informationMap.put("directorBirthDate", "1988-06-06"); // 须与身份证号第7-14位一致
 			informationMap.put("directorCertExpiryDate", "2042-01-01");
 			informationMap.put("directorProvince", "210000_辽宁省");
 			informationMap.put("directorCity", "210200_大连市");
@@ -122,9 +122,9 @@ public class CertificationAdd {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"}); // 须与身份证号第7-14位一致
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});
@@ -133,32 +133,35 @@ public class CertificationAdd {
 			informationMap.put("beneficiaryShareholderRatio", new Number[] {100});
 			informationMap.put("beneficiaryCountry", new String[] {"CHN"});
 		}else if("5".equals(dataContentMap.get("userType"))) {
-			informationMap.put("orgRegister", 123123);
-			informationMap.put("otherAccessories", 123123);
+			String sn = GepUtils.randomSn();
+			informationMap.put("orgRegister", 13331433);
+			informationMap.put("otherAccessories", 13331435);
 			informationMap.put("registerCountry", "USA");
-			informationMap.put("name", "全球有限互联公司");
-			informationMap.put("enName", "QU QIU YOU XIAN HU LIAN");
-			informationMap.put("orgRegisterNo", "11000001");
+			// 境外企业地址类字段仅支持半角字符
+			informationMap.put("name", "TEST CO " + sn);
+			informationMap.put("enName", "TEST COMPANY " + sn);
+			informationMap.put("orgRegisterNo", "ORG" + sn);
 			informationMap.put("registerDate", "2000-01-01");
 			informationMap.put("registerAmt", "100");
-			informationMap.put("registerProvince", "210000_辽宁省");
-			informationMap.put("registerCity", "210200_大连市");
-			informationMap.put("registerArea", "210202_中山区");
-			informationMap.put("registerAddress", "某个地方");
-			informationMap.put("province", "210000_辽宁省");	
-			informationMap.put("city", "210200_大连市");	
-			informationMap.put("area", "210202_中山区");	
-			informationMap.put("address", "某个地方");
-			informationMap.put("postCode", "12345");
+			informationMap.put("registerProvince", "California");
+			informationMap.put("registerCity", "Los Angeles");
+			informationMap.put("registerArea", "Downtown");
+			informationMap.put("registerAddress", "100 Main St.");
+			informationMap.put("province", "California");
+			informationMap.put("city", "Los Angeles");
+			informationMap.put("area", "Downtown");
+			informationMap.put("address", "100 Main St.");
+			informationMap.put("postCode", "90012");
 
 			informationMap.put("directorIdType", new Number[] {1});
 			informationMap.put("directorIdFront",  new Number[] {13331433});
 			informationMap.put("directorIdReverse",  new Number[] {13331433});
 			informationMap.put("directorIdHold",  new Number[] {13331433});
-			informationMap.put("directorIdNo", new String[] {"421000195710071340"});
+			informationMap.put("directorIdNo", new String[] {"421000198806061343"});
 			informationMap.put("directorName", new String[] {"阿木木"});
-			informationMap.put("directorBirthDate", new String[] {"1988-06-06"});
+			informationMap.put("directorBirthDate", new String[] {"1988-06-06"}); // 须与身份证号第7-14位一致
 			informationMap.put("directorCertExpiryDate", new String[] {"2042-01-01"});
+			// 董事国籍为 CHN，地址使用国内码表格式
 			informationMap.put("directorProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("directorCity", new String[] {"210200_大连市"});
 			informationMap.put("directorArea", new String[] {"210202_中山区"});
@@ -168,13 +171,13 @@ public class CertificationAdd {
 			informationMap.put("beneficiaryIdType", new Number[] {1});
 			informationMap.put("beneficiaryIdFront", new Number[] {13331435});
 			informationMap.put("beneficiaryIdReverse", new Number[] {13331436});
-			informationMap.put("beneficiaryIdNo", new String[] {"421000195710071340"});
+			informationMap.put("beneficiaryIdNo", new String[] {"421000198806061343"});
 			informationMap.put("beneficiaryName", new String[] {"阿木木"});
-			informationMap.put("beneficiaryBirthDate", new String[] {"2000-01-01"});
+			informationMap.put("beneficiaryBirthDate", new String[] {"1988-06-06"}); // 须与身份证号第7-14位一致
 			informationMap.put("beneficiaryCertExpiryDate", new String[] {"2050-01-01"});
 			informationMap.put("beneficiaryProvince", new String[] {"210000_辽宁省"});
 			informationMap.put("beneficiaryCity", new String[] {"210200_大连市"});
-			informationMap.put("beneficiaryArea",  new String[] {null});
+			informationMap.put("beneficiaryArea",  new String[] {"210202_中山区"});
 			informationMap.put("beneficiaryAddress", new String[] {"一个村庄"});
 			informationMap.put("beneficiaryShareholderRatio", new Number[] {100});
 			informationMap.put("beneficiaryCountry", new String[] {"CHN"});
