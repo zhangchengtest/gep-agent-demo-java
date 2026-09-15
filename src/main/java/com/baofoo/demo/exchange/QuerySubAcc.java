@@ -18,7 +18,7 @@ public class QuerySubAcc {
 		dataContentMap.put("userNo", GepUtils.userNo);
 		dataContentMap.put("certificateId", GepUtils.certificateId);
 		//dataContentMap.put("userReqNo", "");
-		dataContentMap.put("applyId", "2403291435000073314");
+		dataContentMap.put("applyId", "2609141644000068161");
 		dataContentMap.put("country", "HKG");
 		dataContentMap.put("accountPayeeType", "1");
 		

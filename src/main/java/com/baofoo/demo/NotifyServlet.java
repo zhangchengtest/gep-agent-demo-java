@@ -10,9 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.baofoo.rsa.RsaCodingUtil;
 import com.baofoo.util.GepUtils;
-import com.baofoo.util.SecurityUtil;
+import com.baofoo.util.NotifyDecryptUtil;
 
 /**
  * Servlet implementation class NotifyServlet 异步通知处理 注： ①、异步通知需要返回OK
@@ -57,9 +56,7 @@ public class NotifyServlet extends HttpServlet {
 		}
 		String dataContent = request.getParameter("dataContent");
 		if (dataContent != null) {
-			dataContent = RsaCodingUtil.decryptByPubCerFile(dataContent, GepUtils.cerpath);
-			dataContent = SecurityUtil.Base64Decode(dataContent);
-			;
+			dataContent = NotifyDecryptUtil.decrypt(dataContent);
 			GepUtils.log("密文 dataContent 解密后：" + dataContent);
 			// TODO 业务处理
 		}
